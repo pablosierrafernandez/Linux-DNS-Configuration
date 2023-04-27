@@ -1,0 +1,19 @@
+
+; <<>> DiG 9.11.5-P4-5.1+deb10u7-Debian <<>> dmz.gsx AXFR
+;; global options: +cmd
+dmz.gsx.		604800	IN	SOA	ns.dmz.gsx. root.ns.dmz.gsx. 1 604800 86400 2419200 604800
+dmz.gsx.		604800	IN	NS	ns.dmz.gsx.
+mail.dmz.gsx.		604800	IN	A	192.0.2.4
+ns.dmz.gsx.		604800	IN	A	192.0.2.4
+pop3.dmz.gsx.		604800	IN	A	192.0.2.4
+router.dmz.gsx.		604800	IN	A	192.0.2.1
+router.dmz.gsx.		604800	IN	MX	10 mail.dmz.gsx.
+server.dmz.gsx.		604800	IN	A	192.0.2.4
+stmp.dmz.gsx.		604800	IN	A	192.0.2.4
+dmz.gsx.		604800	IN	SOA	ns.dmz.gsx. root.ns.dmz.gsx. 1 604800 86400 2419200 604800
+;; Query time: 0 msec
+;; SERVER: 127.0.0.1#53(127.0.0.1)
+;; WHEN: dv. d’abr. 08 12:47:28 UTC 2022
+;; XFR size: 10 records (messages 1, bytes 289)
+
+

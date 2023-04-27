@@ -1,0 +1,32 @@
+default-duid "\000\001\000\001)\343?\252\342\266\243\305\354";
+lease {
+  interface "eth0";
+  fixed-address 172.22.0.2;
+  option subnet-mask 255.255.248.0;
+  option routers 	172.22.0.0;
+  option dhcp-lease-time 600;
+  option dhcp-message-type 5;
+  option domain-name-servers 	172.22.0.4;
+  option dhcp-server-identifier 172.22.7.254;
+  option broadcast-address 172.22.7.255;
+  option domain-name "example.org";
+  renew 4 2022/04/08 12:32:17;
+  rebind 4 2022/04/08 12:32:17;
+  expire 4 2022/04/08 12:32:17;
+}
+lease {
+  interface "eth0";
+  fixed-address 255.255.248.0;
+  option subnet-mask 255.255.255.248;
+  option routers 172.22.0.0;
+  option dhcp-lease-time 600;
+  option dhcp-message-type 5;
+  option domain-name-servers 192.0.2.4;
+  option dhcp-server-identifier 172.22.0.4;
+  option broadcast-address 172.22.7.255;
+  option domain-name "dmz.gsx";
+  renew 4 2022/04/08 12:32:20;
+  rebind 4 2022/04/08 12:35:43;
+  expire 4 2022/04/08 12:35:13;
+}
+
